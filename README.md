@@ -19,7 +19,7 @@ Les sources (Disponible dans la semaine du 25 septembre) seront disponibles sous
 Vous trouverez ci-dessous la documentation détaillée de la solution et les fonctionnalités par version.
 
 En premier lieu, nous décrivons le modèle de données Dataverse ainsi que les liens entre les entités. 
-Puis, pour chaque table, la structure détaillée des données.
+Puis, pour chaque table, la structure détaillée des données et description des différents objets par table (formulaires, vues, ...)
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
 
@@ -28,3 +28,12 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 
 # Liens entre les différentes entités du modèle
 ![2](https://github.com/nuage365/compta365/assets/102873102/308e7cb0-cae7-4230-b0b1-4f538936fdc7)
+
+# Structure détaillée des données et des objets par table
+Tutoriel 2 sur 3 disponible le 21 septembre 2023 !
+
+# Fonctionnalités par version
+Documentation disponible le 21 septembre 2023
+
+# Documentation de la solution Compta365
+Documentation disponible le 24 septembre 2023
