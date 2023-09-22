@@ -76,9 +76,11 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
   
 | Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
 | --- | --- | --- | --- |
+| Numéro Lot journal | nuage365_NumeroLotjournal | Numérotation automatique (Personnalisé : LOT{SEQNUM:8}) |  |
 | Compagnie | nuage365_Compagnie | Rechercher (Compagnie) |  |
 | Date de journal  | nuage365_Datedejournal  | Date uniquement  |   |
 | Code journal  | nuage365_Codejournal  | Rechercher (Journaux comptables)  |   |
 | Description  | nuage365_Description  | Une seule ligne de texte (100 caractères)  |   |
+| Transaction postée | nuage365_Transactionpostee  | Oui/Non  | Valeur Non par défaut  |
 
 # Documentation de la solution Compta365
