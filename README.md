@@ -22,18 +22,32 @@ En premier lieu, nous décrivons le modèle de données Dataverse ainsi que les 
 Puis, pour chaque table, la structure détaillée des données et description des différents objets par table (formulaires, vues, ...)
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
-
+# Version de documentation et fonctionnalités
+>Version 2023.09.16 :
+>* Création du modèle de base
+>* Création des liens du modèle de base
+>* Structure détaillée des tables du modèle de base
+  
 # Description du modèle de données
+
 ![Modèle de données](https://github.com/nuage365/compta365/assets/102873102/71659a8a-e4d0-469f-b8a5-bde782029a21)
 
 # Liens entre les différentes entités du modèle
+
 ![2](https://github.com/nuage365/compta365/assets/102873102/308e7cb0-cae7-4230-b0b1-4f538936fdc7)
 
 # Structure détaillée des données et des objets par table
-Tutoriel 2 sur 3 disponible le 21 septembre 2023 !
 
-# Fonctionnalités par version
-Documentation disponible le 21 septembre 2023
+## Entité / table "Compagnie"
+- Nom de la table : nuage365_Compagnie
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Nom | nuage365_Name | Une seule ligne de texte (100 caractères) |  |
+| Adresse  | nuage365_Adresse  | Zone de texte (400 caractères)  |   |
+| Numéro de taxe fédérale| nuage365_Numerodetaxefederale | Une seule ligne de texte (50 caractères)  |   |
+| Numéro de taxe provinciale| nuage365_Numerodetaxeprovinciale | Une seule ligne de texte (50 caractères) |   |
+| Numéro de taxe autre| nuage365_Numerodetaxeautre | Une seule ligne de texte (50 caractères) |   |
+| Devise par défaut| nuage365_Devisepardefaut | Rechercher (Devise) |   |
 
 # Documentation de la solution Compta365
-Documentation disponible le 24 septembre 2023
