@@ -83,4 +83,17 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Description  | nuage365_Description  | Une seule ligne de texte (100 caractères)  |   |
 | Transaction postée | nuage365_Transactionpostee  | Oui/Non  | Valeur Non par défaut  |
 
+## Entité / table "Détails Transactions"
+- Nom de la table : nuage365_Detailstransactions
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Numéro Lot journal | nuage365_NumeroLotjournal | Rechercher (Transaction) |  |
+| Numéro de compte GL | nuage365_NumerodeGL | Rechercher (Plan comptable) |  |
+| Référence écriture  | nuage365_Referenceecriture  | Une seule ligne de texte (150 caractères)  | Peut représenter le numéro de document, facture, ...  |
+| Montant débit  | nuage365_Montantdebit  | Décimal (2)  | Valeur minimale : -100 000 000 000 valeur maximale : 100 000 000 000  |
+| Montant crédit  | nuage365_Montantcredit  | Décimal (2)  | Valeur minimale : -100 000 000 000 valeur maximale : 100 000 000 000  |
+| Description | nuage365_Description  | Une seule ligne de texte (150 caractères)  |   |
+| Ecritures postées|SupeO nuage365_Ecriturespostees  | Oui/Non  | Valeur Non par défaut  |
+
 # Documentation de la solution Compta365
