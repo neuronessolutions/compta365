@@ -1,12 +1,6 @@
 # compta365
 Comptabilité générale Open source créée avec Microsoft PowerApps et les outils de la powerplatforme
 
-[Introduction](#introduction)
-
-[Description du modèle de données](#description-du-modèle-de-données)
-
-[Liens entre les différentes entités du modèle](#liens-entre-les-différentes-entités-du-modèle)
-
 # Introduction
 **Compta365** a été développé avec la plateforme Low Code Microsoft PowerApps et la "Power Plateforme" ! Ce projet est open source et est utilisé aussi pour un évènement 2023 HackTogether, "the Power Platform Global AI Hack" pour utiliser des parties IA intégrées dans la solution avec Azure OpenAI et Copilot. Il s'agit d'une PowerApps de type "model-driven". Donc, comme Microsoft Dynamics 365 Sales par exemple !
 Il sert de tutoriel ou de base à qui voudrait se lancer dans la création de solutions destinées aux entreprises.
@@ -49,5 +43,16 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Numéro de taxe provinciale| nuage365_Numerodetaxeprovinciale | Une seule ligne de texte (50 caractères) |   |
 | Numéro de taxe autre| nuage365_Numerodetaxeautre | Une seule ligne de texte (50 caractères) |   |
 | Devise par défaut| nuage365_Devisepardefaut | Rechercher (Devise) |   |
+
+## Entité / table "Plan comptable"
+- Nom de la table : nuage365_Plancomptable
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| GL No | nuage365_GLNo | Une seule ligne de texte (40 caractères) |  |
+| Description  | nuage365_Description  | Une seule ligne de texte (100 caractères)  |   |
+| Type de compte| nuage365_Typedecompte | Option (Bilan, Résultat)  |   |
+| Sous type de compte| nuage365_Soustypedecompte | Option (Charges, Produits) |   |
+
 
 # Documentation de la solution Compta365
