@@ -54,5 +54,21 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Type de compte| nuage365_Typedecompte | Option (Bilan, Résultat)  |   |
 | Sous type de compte| nuage365_Soustypedecompte | Option (Charges, Produits) |   |
 
+## Entité / table "Journaux comptables"
+- Nom de la table : nuage365_Journauxcomptables
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Code journal | nuage365_Codejournal | Une seule ligne de texte (20 caractères) |  |
+| Description  | nuage365_Description  | Une seule ligne de texte (80 caractères)  |   |
+
+## Entité / table "Tiers"
+- Nom de la table : nuage365_Tiers
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Nom du tiers | nuage365_Nomdutiers | Une seule ligne de texte (150 caractères) |  |
+| Adresse  | nuage365_Adresse  | Zone de texte (400 caractères)  |   |
+| Type de tiers  | nuage365_Typedetiers  | Option (Client, Fournisseur, Banque)  |   |
 
 # Documentation de la solution Compta365
