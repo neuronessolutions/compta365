@@ -71,4 +71,14 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Adresse  | nuage365_Adresse  | Zone de texte (400 caractères)  |   |
 | Type de tiers  | nuage365_Typedetiers  | Option (Client, Fournisseur, Banque)  |   |
 
+## Entité / table "Transaction"
+- Nom de la table : nuage365_Transaction
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Compagnie | nuage365_Compagnie | Rechercher (Compagnie) |  |
+| Date de journal  | nuage365_Datedejournal  | Date uniquement  |   |
+| Code journal  | nuage365_Codejournal  | Rechercher (Journaux comptables)  |   |
+| Description  | nuage365_Description  | Une seule ligne de texte (100 caractères)  |   |
+
 # Documentation de la solution Compta365
