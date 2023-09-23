@@ -17,6 +17,10 @@ Puis, pour chaque table, la structure détaillée des données et description de
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
 # Version de documentation et fonctionnalités
+>Version 2023.09.23 :
+>* Mise à jour du modèle de base, des liens entre différentes entités et de la documentation des tables :
+>* Ajout du champ devise dans la table "Détails transactions"
+
 >Version 2023.09.16 :
 >* Création du modèle de base
 >* Création des liens du modèle de base
@@ -24,11 +28,11 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
   
 # Description du modèle de données
 
-![Modèle de données](https://github.com/nuage365/compta365/assets/102873102/71659a8a-e4d0-469f-b8a5-bde782029a21)
+![1](https://github.com/nuage365/compta365/assets/102873102/e821a274-dd19-4639-9135-bdf9488c1d4c)
 
 # Liens entre les différentes entités du modèle
 
-![2](https://github.com/nuage365/compta365/assets/102873102/308e7cb0-cae7-4230-b0b1-4f538936fdc7)
+![2](https://github.com/nuage365/compta365/assets/102873102/5f7c8dbe-3a5b-459e-b072-b3d05473b9ae)
 
 # Structure détaillée des données et des objets par table
 
@@ -91,9 +95,10 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Numéro Lot journal | nuage365_NumeroLotjournal | Rechercher (Transaction) |  |
 | Numéro de compte GL | nuage365_NumerodeGL | Rechercher (Plan comptable) |  |
 | Référence écriture  | nuage365_Referenceecriture  | Une seule ligne de texte (150 caractères)  | Peut représenter le numéro de document, facture, ...  |
+| Devise | nuage365_Devisepardefaut | Rechercher (Devise) |   |
 | Montant débit  | nuage365_Montantdebit  | Décimal (2)  | Valeur minimale : -100 000 000 000 valeur maximale : 100 000 000 000  |
 | Montant crédit  | nuage365_Montantcredit  | Décimal (2)  | Valeur minimale : -100 000 000 000 valeur maximale : 100 000 000 000  |
 | Description | nuage365_Description  | Une seule ligne de texte (150 caractères)  |   |
-| Ecritures postées|SupeO nuage365_Ecriturespostees  | Oui/Non  | Valeur Non par défaut  |
+| Ecritures postées| nuage365_Ecriturespostees  | Oui/Non  | Valeur Non par défaut  |
 
 # Documentation de la solution Compta365
