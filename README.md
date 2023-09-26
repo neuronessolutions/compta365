@@ -17,6 +17,10 @@ Puis, pour chaque table, la structure détaillée des données et description de
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
 # Version de documentation et fonctionnalités
+>Version 2023.09.26 :
+>* Mise à jour du modèle de base, des liens entre différentes entités et de la documentation des tables :
+>* Ajout des champs montant débit et crédit de type devise. Simplification du modèle pour les transactions.
+
 >Version 2023.09.23 :
 >* Mise à jour du modèle de base, des liens entre différentes entités et de la documentation des tables :
 >* Ajout du champ devise dans la table "Détails transactions"
@@ -26,13 +30,10 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 >* Création des liens du modèle de base
 >* Structure détaillée des tables du modèle de base
   
-# Description du modèle de données
+# Description du modèle de données et liens entre les données
 
-![1](https://github.com/nuage365/compta365/assets/102873102/e821a274-dd19-4639-9135-bdf9488c1d4c)
+![Compta365 Modèle de données](https://github.com/nuage365/compta365/assets/102873102/ba13c420-caad-40d3-8c1c-bd3353149d74)
 
-# Liens entre les différentes entités du modèle
-
-![2](https://github.com/nuage365/compta365/assets/102873102/5f7c8dbe-3a5b-459e-b072-b3d05473b9ae)
 
 # Structure détaillée des données et des objets par table
 
@@ -75,29 +76,24 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Adresse  | nuage365_Adresse  | Zone de texte (400 caractères)  |   |
 | Type de tiers  | nuage365_Typedetiers  | Option (Client, Fournisseur, Banque)  |   |
 
-## Entité / table "Transaction"
-- Nom de la table : nuage365_Transaction
-  
-| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
-| --- | --- | --- | --- |
-| Numéro Lot journal | nuage365_NumeroLotjournal | Numérotation automatique (Personnalisé : LOT{SEQNUM:8}) |  |
-| Compagnie | nuage365_Compagnie | Rechercher (Compagnie) |  |
-| Date de journal  | nuage365_Datedejournal  | Date uniquement  |   |
-| Code journal  | nuage365_Codejournal  | Rechercher (Journaux comptables)  |   |
-| Description  | nuage365_Description  | Une seule ligne de texte (100 caractères)  |   |
-| Transaction postée | nuage365_Transactionpostee  | Oui/Non  | Valeur Non par défaut  |
-
 ## Entité / table "Détails Transactions"
 - Nom de la table : nuage365_Detailstransactions
   
 | Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
 | --- | --- | --- | --- |
-| Numéro Lot journal | nuage365_NumeroLotjournal | Rechercher (Transaction) |  |
+| Numéro écriture | nuage365_NumeroEcriture | Rechercher (Journaux comptables) |  |
+| Code journal | nuage365_Codejournal | Rechercher (Journaux comptables) |  |
+| Compagnie | nuage365_Compagnie | Rechercher (Compagnie) |  |
+| Date écriture | nuage365_Dateecriture | Date uniquement |  |
 | Numéro de compte GL | nuage365_NumerodeGL | Rechercher (Plan comptable) |  |
 | Référence écriture  | nuage365_Referenceecriture  | Une seule ligne de texte (150 caractères)  | Peut représenter le numéro de document, facture, ...  |
-| Devise | nuage365_Devisepardefaut | Rechercher (Devise) |   |
-| Montant débit  | nuage365_Montantdebit  | Décimal (2)  | Valeur minimale : -100 000 000 000 valeur maximale : 100 000 000 000  |
-| Montant crédit  | nuage365_Montantcredit  | Décimal (2)  | Valeur minimale : -100 000 000 000 valeur maximale : 100 000 000 000  |
+| Tiers | nuage365_Tiers | Rechercher (Tiers) |   |
+| Devise | TransactionCurrencyId | Rechercher (Devise) |   |
+| Taux de change | ExchangeRate | Décimal |   |
+| Montant débit  | nuage365_Montantdebit  | Devise  |   |
+| Montant crédit  | nuage365_Montantcredit  | Devise  |  |
+| Montant débit (de base)  | nuage365_Montantdebit_Base  | Devise  |   |
+| Montant crédit (de base)  | nuage365_Montantcredit_Base  | Devise  |  |
 | Description | nuage365_Description  | Une seule ligne de texte (150 caractères)  |   |
 | Ecritures postées| nuage365_Ecriturespostees  | Oui/Non  | Valeur Non par défaut  |
 
