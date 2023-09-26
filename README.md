@@ -1,4 +1,4 @@
-# Compta365 version 2023.09.23
+# Compta365 version 2023.09.26
 Comptabilité générale Open source créée avec Microsoft PowerApps et les outils de la powerplatforme
 
 # Introduction
