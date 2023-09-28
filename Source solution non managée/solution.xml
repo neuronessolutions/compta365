@@ -1,0 +1,126 @@
+<ImportExportXml version="9.2.23092.170" SolutionPackageVersion="9.2" languagecode="1036" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>Compta365</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Compta365" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>2023.09.27.1</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Nuage365</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Nuage365" languagecode="1036" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>nuage365</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>84662</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="nuage365_compagnie" behavior="0" />
+      <RootComponent type="1" schemaName="nuage365_detailstransactions" behavior="0" />
+      <RootComponent type="1" schemaName="nuage365_journauxcomptables" behavior="0" />
+      <RootComponent type="1" schemaName="nuage365_plancomptable" behavior="0" />
+      <RootComponent type="1" schemaName="nuage365_tiers" behavior="0" />
+      <RootComponent type="1" schemaName="transactioncurrency" behavior="1" />
+      <RootComponent type="9" schemaName="nuage365_rapportcomptederesultat" behavior="0" />
+      <RootComponent type="9" schemaName="nuage365_soustypedecompte" behavior="0" />
+      <RootComponent type="9" schemaName="nuage365_typedecompte" behavior="0" />
+      <RootComponent type="9" schemaName="nuage365_typedetiers" behavior="0" />
+      <RootComponent type="61" schemaName="nuage365_iconcompagnie" behavior="0" />
+      <RootComponent type="61" schemaName="nuage365_iconjournaux" behavior="0" />
+      <RootComponent type="61" schemaName="nuage365_iconplancomptable" behavior="0" />
+      <RootComponent type="61" schemaName="nuage365_icontiers" behavior="0" />
+      <RootComponent type="61" schemaName="nuage365_icontransaction" behavior="0" />
+      <RootComponent type="62" schemaName="cr456_Compta365" behavior="0" />
+      <RootComponent type="80" schemaName="cr456_Compta365" behavior="0" />
+      <RootComponent type="372" id="{8d7c18f8-fb61-4a21-b9d2-278747dfe41c}" schemaName="nuage365_openai-20connecteur" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="cr456_Compta365" displayName="Compta365" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="FluentThemingPreview" solution="msdyn_PowerAppsThemingSettings (1.0.0.10)" id.uniquename="FluentThemingPreview" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr456_Compta365,settingdefinitionid.uniquename=FluentThemingPreview" id.parentappmoduleid.uniquename="cr456_Compta365" id.settingdefinitionid.uniquename="FluentThemingPreview" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="MobileCommandingImprovements2022" solution="msdyn_CommandingSettings (1.0.0.2)" id.uniquename="MobileCommandingImprovements2022" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr456_Compta365,settingdefinitionid.uniquename=MobileCommandingImprovements2022" id.parentappmoduleid.uniquename="cr456_Compta365" id.settingdefinitionid.uniquename="MobileCommandingImprovements2022" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="MobileCommandingImprovements2022Tablet" solution="msdyn_CommandingSettings (1.0.0.2)" id.uniquename="MobileCommandingImprovements2022Tablet" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr456_Compta365,settingdefinitionid.uniquename=MobileCommandingImprovements2022Tablet" id.parentappmoduleid.uniquename="cr456_Compta365" id.settingdefinitionid.uniquename="MobileCommandingImprovements2022Tablet" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="NativeMobileDateTime" solution="SettingDefinitionsData (9.1.23083.230816003)" id.uniquename="NativeMobileDateTime" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr456_Compta365,settingdefinitionid.uniquename=NativeMobileDateTime" id.parentappmoduleid.uniquename="cr456_Compta365" id.settingdefinitionid.uniquename="NativeMobileDateTime" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="NativeMobileInputs" solution="SettingDefinitionsData (9.1.23083.230816003)" id.uniquename="NativeMobileInputs" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=cr456_Compta365,settingdefinitionid.uniquename=NativeMobileInputs" id.parentappmoduleid.uniquename="cr456_Compta365" id.settingdefinitionid.uniquename="NativeMobileInputs" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
