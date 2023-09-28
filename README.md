@@ -109,3 +109,8 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Ecritures postées| nuage365_Ecriturespostees  | Oui/Non  | Valeur Non par défaut  |
 
 # Documentation de la solution Compta365
+
+![Capture d’écran, le 2023-09-27 à 22 49 01](https://github.com/nuage365/compta365/assets/102873102/8d385e12-a59f-49a9-8d33-28c82cdc60f2)
+
+
+Documentation détaillée par module à venir :)
