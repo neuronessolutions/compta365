@@ -1,4 +1,4 @@
-# Compta365 version 2023.09.26
+# Compta365 version 2023.09.27.1
 Comptabilité générale Open source créée avec Microsoft PowerApps et les outils de la powerplatforme
 
 # Introduction
@@ -8,7 +8,9 @@ Il sert de tutoriel ou de base à qui voudrait se lancer dans la création de so
 Pour la base, nous avons commencé par développer une comptabilité générale d'entreprise multicompagnie simple. Au fur et à mesure, nous y ajouterons des fonctionnalités régulièrement.
 Vous pouvez l'utiliser comme comptabilité générale pour votre compagnie. On pourrait aussi faire une interface grâce à Powerautomate pour générer les écritures comptables dans Compta365 à partir d'un logiciel externe de facturation ou des factures issues de Dynamics 365 Sales par exemple.
 
-Les sources (Disponible dans la semaine du 25 septembre) seront disponibles sous forme de solution non managée et managée. Ainsi, vous pourrez utiliser la solution dans votre environnement de développement PowerApps ou dans votre environnement de production !
+Nous utiliserons Copilot pour bâtir automatiquement des rapports PowerBI :)
+
+Les sources sont disponibles sous forme de solution non managée. Ainsi, vous pourrez utiliser la solution dans votre environnement de développement PowerApps, puis l'exporter en solution managée pour votre environnement de production !
 
 Vous trouverez ci-dessous la documentation détaillée de la solution et les fonctionnalités par version.
 
@@ -17,6 +19,12 @@ Puis, pour chaque table, la structure détaillée des données et description de
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
 # Version de documentation et fonctionnalités
+>Version 2023.09.27.1 :
+>* Ajout de 2 champs dans la table "Plan comptable" pour gérer plus facilement les rapports annuels. (Regroupement Bilan et Regroupement compte de résultat)
+>* Mise à jour du modèle de données pour "Plan comptable"
+>* Ajout des icônes pour chaque table custom
+>* Ajout de la solution non managée et des sources de la solution
+
 >Version 2023.09.26 :
 >* Mise à jour du modèle de base, des liens entre différentes entités et de la documentation des tables :
 >* Ajout des champs montant débit et crédit de type devise. Simplification du modèle pour les transactions.
@@ -32,7 +40,8 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
   
 # Description du modèle de données et liens entre les données
 
-![Compta365 Modèle de données](https://github.com/nuage365/compta365/assets/102873102/ba13c420-caad-40d3-8c1c-bd3353149d74)
+![Compta365 Modèle de données (1)](https://github.com/nuage365/compta365/assets/102873102/aab00600-1f3e-41af-980d-d2a5cf069e9b)
+
 
 
 # Structure détaillée des données et des objets par table
@@ -58,6 +67,8 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Description  | nuage365_Description  | Une seule ligne de texte (100 caractères)  |   |
 | Type de compte| nuage365_Typedecompte | Option (Bilan, Résultat)  |   |
 | Sous type de compte| nuage365_Soustypedecompte | Option (Charges, Produits) |   |
+| Regroupement Bilan | nuage365_RegroupementBilan  | Une seule ligne de texte (150 caractères)  |   |
+| Regroupement compte de résultat  | nuage365_Regroupementcomptederesultat  | Une seule ligne de texte (150 caractères)  |   |
 
 ## Entité / table "Journaux comptables"
 - Nom de la table : nuage365_Journauxcomptables
