@@ -1176,7 +1176,7 @@
                             <row>
                               <cell id="{f5a1c557-84d5-46a4-80e6-2ce2b921c906}">
                                 <labels>
-                                  <label description="Name" languagecode="1036" />
+                                  <label description="Nom" languagecode="1036" />
                                 </labels>
                                 <control id="nuage365_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nuage365_name" />
                               </cell>
@@ -1281,6 +1281,7 @@
               <DisplayConditions Order="0" FallbackForm="true">
                 <Everyone />
               </DisplayConditions>
+              <controlDescriptions />
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -5820,6 +5821,7 @@
           <IsCollaboration>0</IsCollaboration>
           <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
           <IsConnectionsEnabled>0</IsConnectionsEnabled>
+          <EntityColor></EntityColor>
           <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
           <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
           <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
@@ -5866,9 +5868,11 @@
           <CanCreateViews>1</CanCreateViews>
           <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
           <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <IconVectorName>nuage365_periodefiscale</IconVectorName>
           <EnforceStateTransitions>0</EnforceStateTransitions>
           <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
           <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <EntityHelpUrl></EntityHelpUrl>
           <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
           <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
           <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
@@ -13193,6 +13197,59 @@
       </options>
     </optionset>
   </optionsets>
+  <Dashboards>
+    <Dashboard>
+      <LocalizedNames>
+        <LocalizedName description="Déclarations des taxes" languagecode="1036" />
+      </LocalizedNames>
+      <FormId>{90c4ebb1-5762-ee11-8df0-0022483cbd89}</FormId>
+      <IsCustomizable>1</IsCustomizable>
+      <IsDefault>0</IsDefault>
+      <FormXml>
+        <forms type="powerbi">
+          <form>
+            <tabs>
+              <tab showlabel="false" verticallayout="true" id="{5feb19f8-514d-44b0-bf68-1da59b1636e2}">
+                <labels>
+                  <label description="" languagecode="1036" />
+                </labels>
+                <columns>
+                  <column width="100%">
+                    <sections>
+                      <section showlabel="false" showbar="false" columns="111" id="{7f25eb42-d789-4964-9cb1-a01819dd6718}">
+                        <labels>
+                          <label description="" languagecode="1036" />
+                        </labels>
+                        <rows>
+                          <row>
+                            <cell colspan="3" rowspan="24" showlabel="false" id="{9aaf6a2a-64d4-45cf-93c0-d32a962ec289}" availableforphone="false">
+                              <labels>
+                                <label description="" languagecode="1036" />
+                              </labels>
+                              <control id="82d9bbc3-6803-44e2-a4f9-a6a39286ff33" classid="{8C54228C-1B25-4909-A12A-F2B968BB0D62}">
+                                <parameters>
+                                  <PowerBIGroupId>1aa1288f-b2c4-4e79-9bdb-9c2b5a797dbd</PowerBIGroupId>
+                                  <PowerBIReportId>72601257-4908-45a6-aa92-8a5fb3894d38</PowerBIReportId>
+                                  <TileUrl>https://app.powerbi.com/reportEmbed?w=2&amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUNBTkFEQS1DRU5UUkFMLUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsidXNhZ2VNZXRyaWNzVk5leHQiOnRydWV9fQ%3D%3D&amp;groupId=1aa1288f-b2c4-4e79-9bdb-9c2b5a797dbd&amp;reportId=72601257-4908-45a6-aa92-8a5fb3894d38</TileUrl>
+                                  <Type>2</Type>
+                                </parameters>
+                              </control>
+                            </cell>
+                          </row>
+                        </rows>
+                      </section>
+                    </sections>
+                  </column>
+                </columns>
+              </tab>
+            </tabs>
+          </form>
+        </forms>
+      </FormXml>
+      <IntroducedVersion>2023.10.02.2</IntroducedVersion>
+      <IsTabletEnabled>0</IsTabletEnabled>
+    </Dashboard>
+  </Dashboards>
   <WebResources>
     <WebResource>
       <WebResourceId>{6a454e71-a65d-ee11-8df0-0022483c04c3}</WebResourceId>
@@ -13272,6 +13329,20 @@
       <IsHidden>0</IsHidden>
       <FileName>/WebResources/nuage365_icontransactionsgen5887FE1B-5E61-EE11-8DF0-0022483CBD89</FileName>
     </WebResource>
+    <WebResource>
+      <WebResourceId>{015a8a1d-5962-ee11-8df0-0022483cbd89}</WebResourceId>
+      <Name>nuage365_periodefiscale</Name>
+      <DisplayName>periodefiscale</DisplayName>
+      <LanguageCode>0</LanguageCode>
+      <WebResourceType>11</WebResourceType>
+      <IntroducedVersion>2023.10.02.2</IntroducedVersion>
+      <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+      <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+      <IsCustomizable>1</IsCustomizable>
+      <CanBeDeleted>1</CanBeDeleted>
+      <IsHidden>0</IsHidden>
+      <FileName>/WebResources/nuage365_periodefiscale015A8A1D-5962-EE11-8DF0-0022483CBD89</FileName>
+    </WebResource>
   </WebResources>
   <CustomControls />
   <AppModuleSiteMaps>
@@ -13291,6 +13362,7 @@
               <Title LCID="1036" Title="Paramétrages" />
             </Titles>
             <SubArea Id="subarea_ebeea1be" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nuage365_compagnie" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+            <SubArea Id="subarea_56f86647" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nuage365_periodefiscale" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
             <SubArea Id="subarea_d5c01f62" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nuage365_plancomptable" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
             <SubArea Id="subarea_1b4d92a9" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nuage365_journauxcomptables" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
             <SubArea Id="subarea_6f3c2f20" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nuage365_tiers" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
@@ -13300,6 +13372,16 @@
               <Title LCID="1036" Title="Journaux d'écritures" />
             </Titles>
             <SubArea Id="subarea_de0e1630" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nuage365_transactions" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+          </Group>
+          <Group Id="group_20840f9e" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+            <Titles>
+              <Title LCID="1036" Title="Rapports" />
+            </Titles>
+            <SubArea Id="subarea_645c8043" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="90c4ebb1-5762-ee11-8df0-0022483cbd89" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="DashboardTooltip">
+              <Titles>
+                <Title LCID="1036" Title="Déclarations des taxes" />
+              </Titles>
+            </SubArea>
           </Group>
         </Area>
       </SiteMap>
@@ -13326,6 +13408,8 @@
         <AppModuleComponent type="1" schemaName="nuage365_tiers" />
         <AppModuleComponent type="1" schemaName="nuage365_detailstransactions" />
         <AppModuleComponent type="1" schemaName="nuage365_transactions" />
+        <AppModuleComponent type="1" schemaName="nuage365_periodefiscale" />
+        <AppModuleComponent type="60" id="{90c4ebb1-5762-ee11-8df0-0022483cbd89}" />
         <AppModuleComponent type="62" schemaName="cr456_Compta365" />
       </AppModuleComponents>
       <AppModuleRoleMaps>
