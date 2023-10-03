@@ -5,7 +5,7 @@
       <LocalizedName description="Compta365" languagecode="1036" />
     </LocalizedNames>
     <Descriptions />
-    <Version>2023.09.27.1</Version>
+    <Version>2023.10.02.2</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Nuage365</UniqueName>
@@ -80,18 +80,22 @@
       <RootComponent type="1" schemaName="nuage365_compagnie" behavior="0" />
       <RootComponent type="1" schemaName="nuage365_detailstransactions" behavior="0" />
       <RootComponent type="1" schemaName="nuage365_journauxcomptables" behavior="0" />
+      <RootComponent type="1" schemaName="nuage365_periodefiscale" behavior="0" />
       <RootComponent type="1" schemaName="nuage365_plancomptable" behavior="0" />
       <RootComponent type="1" schemaName="nuage365_tiers" behavior="0" />
+      <RootComponent type="1" schemaName="nuage365_transactions" behavior="0" />
       <RootComponent type="1" schemaName="transactioncurrency" behavior="1" />
       <RootComponent type="9" schemaName="nuage365_rapportcomptederesultat" behavior="0" />
       <RootComponent type="9" schemaName="nuage365_soustypedecompte" behavior="0" />
       <RootComponent type="9" schemaName="nuage365_typedecompte" behavior="0" />
       <RootComponent type="9" schemaName="nuage365_typedetiers" behavior="0" />
+      <RootComponent type="29" id="{b25776b4-c360-ee11-8df0-0022483cbd89}" behavior="0" />
       <RootComponent type="61" schemaName="nuage365_iconcompagnie" behavior="0" />
       <RootComponent type="61" schemaName="nuage365_iconjournaux" behavior="0" />
       <RootComponent type="61" schemaName="nuage365_iconplancomptable" behavior="0" />
       <RootComponent type="61" schemaName="nuage365_icontiers" behavior="0" />
       <RootComponent type="61" schemaName="nuage365_icontransaction" behavior="0" />
+      <RootComponent type="61" schemaName="nuage365_icontransactionsgen" behavior="0" />
       <RootComponent type="62" schemaName="cr456_Compta365" behavior="0" />
       <RootComponent type="80" schemaName="cr456_Compta365" behavior="0" />
       <RootComponent type="372" id="{8d7c18f8-fb61-4a21-b9d2-278747dfe41c}" schemaName="nuage365_openai-20connecteur" behavior="0" />
@@ -100,6 +104,10 @@
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="cr456_Compta365" displayName="Compta365" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2309.2010)" />
+        <Dependent type="60" displayName="informations" parentDisplayName="Transactions" id="{2c47b173-8b60-ee11-8df0-0022483d07d3}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="SettingDefinition" displayName="FluentThemingPreview" solution="msdyn_PowerAppsThemingSettings (1.0.0.10)" id.uniquename="FluentThemingPreview" />
