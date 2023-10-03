@@ -21,6 +21,7 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 # Version de documentation et fonctionnalités
 >Version 2023.10.02.2 :
 >* Ajout d'une entité "Transactions" qui sert d'entête à l'entité "Détails transactions". Ajout des liens entre ces 2 entités et modification des formulaires et vues.
+>* Ajout de champs "Total débit" et "Total crédit" dans la nouvelle entité "Transactions" et création d'un workflow pour cumuler les montants débits et crédits de l'entité "Détails transactions". Total débit doit être égal au Total crédit pour pouvoir poster la transaction (future fonctionnalité)
 >* Ajout d'une entité "Periode fiscale" par compagnie pour contrôler plus tard la saisie des écritures dans une période autorisée
 >* Ajout de 2 champs (taxes sur achats et taxes sur ventes) dans l'entité "Plan comptable" pour indiquer qu'un compte de GL concerne une taxe. Va servir à notre futur module de déclaration de taxes.
 >* Mise à jour de la solution non managée et des sources de la solution
