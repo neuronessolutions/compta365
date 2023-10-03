@@ -1,4 +1,4 @@
-# Compta365 version 2023.09.27.1
+# Compta365 version 2023.10.02.2
 Comptabilité générale Open source créée avec Microsoft PowerApps et les outils de la powerplatforme
 
 # Introduction
@@ -19,6 +19,14 @@ Puis, pour chaque table, la structure détaillée des données et description de
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
 # Version de documentation et fonctionnalités
+>Version 2023.10.02.2 :
+>* Ajout d'une entité "Transactions" qui sert d'entête à l'entité "Détails transactions". Ajout des liens entre ces 2 entités et modification des formulaires et vues.
+>* Ajout d'une entité "Periode fiscale" par compagnie pour contrôler plus tard la saisie des écritures dans une période autorisée
+>* Ajout de 2 champs (taxes sur achats et taxes sur ventes) dans l'entité "Plan comptable" pour indiquer qu'un compte de GL concerne une taxe. Va servir à notre futur module de déclaration de taxes.
+>* Mise à jour de la solution non managée et des sources de la solution
+>* Mise à jour du modèle des données
+>* Ajout des descriptions des nouvelles entités et champs ajoutés !
+
 >Version 2023.09.27.1 :
 >* Ajout de 2 champs dans la table "Plan comptable" pour gérer plus facilement les rapports annuels. (Regroupement Bilan et Regroupement compte de résultat)
 >* Mise à jour du modèle de données pour "Plan comptable"
@@ -40,8 +48,7 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
   
 # Description du modèle de données et liens entre les données
 
-![Compta365 Modèle de données (1)](https://github.com/nuage365/compta365/assets/102873102/aab00600-1f3e-41af-980d-d2a5cf069e9b)
-
+![Compta365 Modèle de données (3)](https://github.com/nuage365/compta365/assets/102873102/02781fca-844d-4db3-9a74-cf3bd0370b89)
 
 
 # Structure détaillée des données et des objets par table
@@ -58,6 +65,16 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Numéro de taxe autre| nuage365_Numerodetaxeautre | Une seule ligne de texte (50 caractères) |   |
 | Devise par défaut| nuage365_Devisepardefaut | Rechercher (Devise) |   |
 
+## Entité / table "Période fiscale"
+- Nom de la table : nuage365_Periodefiscale
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Compagnie | nuage365_Compagnie | Rechercher (Compagnie) |  |
+| Date de début d'exercice | nuage365_Datededebutdexercice | Date uniquement |  |
+| Date de fin d'exercice | nuage365_Datedefindexercice | Date uniquement |  |
+| Nom période  | nuage365_Nomperiode  | Une seule ligne de texte (100 caractères)  |   |
+
 ## Entité / table "Plan comptable"
 - Nom de la table : nuage365_Plancomptable
   
@@ -69,6 +86,8 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Sous type de compte| nuage365_Soustypedecompte | Option (Charges, Produits) |   |
 | Regroupement Bilan | nuage365_RegroupementBilan  | Une seule ligne de texte (150 caractères)  |   |
 | Regroupement compte de résultat  | nuage365_Regroupementcomptederesultat  | Une seule ligne de texte (150 caractères)  |   |
+| Taxes sur achats| nuage365_Taxessurachats  | Oui/Non  | Valeur Non par défaut  |
+| Taxes sur ventes| nuage365_Taxessurachats  | Oui/Non  | Valeur Non par défaut  |
 
 ## Entité / table "Journaux comptables"
 - Nom de la table : nuage365_Journauxcomptables
@@ -86,6 +105,24 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Nom du tiers | nuage365_Nomdutiers | Une seule ligne de texte (150 caractères) |  |
 | Adresse  | nuage365_Adresse  | Zone de texte (400 caractères)  |   |
 | Type de tiers  | nuage365_Typedetiers  | Option (Client, Fournisseur, Banque)  |   |
+
+## Entité / table "Transactions"
+- Nom de la table : nuage365_Transactions
+  
+| Nom d'affichage|Nom de colonne|Type de colonne|Remarques |
+| --- | --- | --- | --- |
+| Transactions | nuage365_TransactionsId | Identificateur unique |  |
+| Code journal | nuage365_Codejournal | Rechercher (Journaux comptables) |  |
+| Compagnie | nuage365_Compagnie | Rechercher (Compagnie) |  |
+| Date écriture | nuage365_Dateecriture | Date uniquement |  |
+| Description transaction| nuage365_Name  | Une seule ligne de texte (100 caractères)  |   |
+| Devise | TransactionCurrencyId | Rechercher (Devise) |   |
+| Taux de change | ExchangeRate | Décimal |   |
+| Total débit  | nuage365_Totaldebit  | Devise  |   |
+| Total crédit  | nuage365_Totalcredit  | Devise  |  |
+| Total débit (de base)  | nuage365_totaldebit_Base  | Devise  |   |
+| Total crédit (de base)  | nuage365_totalcredit_Base  | Devise  |  |
+| Transaction postée| nuage365_Transactionpostee  | Oui/Non  | Valeur Non par défaut  |
 
 ## Entité / table "Détails Transactions"
 - Nom de la table : nuage365_Detailstransactions
