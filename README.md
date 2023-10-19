@@ -1,4 +1,4 @@
-# Compta365 version 2023.10.02.2
+# Compta365 version 2023.10.19.1
 Comptabilité générale Open source créée avec Microsoft PowerApps et les outils de la powerplatforme
 
 # Introduction
@@ -19,6 +19,10 @@ Puis, pour chaque table, la structure détaillée des données et description de
 Ensuite, nous donnons les fonctionnalités par version, puis la documentation détaillée sur l'utilisation de cette comptabilité générale !
 
 # Version de documentation et fonctionnalités
+>Version 2023.10.19.1 :
+>* Ajout d'un rapport "Déclarations de taxes" créé avec PowerBI
+>* Ajout des copies écrans des modules existants et début de documentation
+
 >Version 2023.10.02.2 :
 >* Ajout d'une entité "Transactions" qui sert d'entête à l'entité "Détails transactions". Ajout des liens entre ces 2 entités et modification des formulaires et vues.
 >* Ajout de champs "Total débit" et "Total crédit" dans la nouvelle entité "Transactions" et création d'un workflow pour cumuler les montants débits et crédits de l'entité "Détails transactions". Total débit doit être égal au Total crédit pour pouvoir poster la transaction (future fonctionnalité)
@@ -147,8 +151,60 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
 | Ecritures postées| nuage365_Ecriturespostees  | Oui/Non  | Valeur Non par défaut  |
 
 # Documentation de la solution Compta365
+### Menu général
+![compta365_Mainmenu](https://github.com/nuage365/compta365/assets/102873102/1cf0cf1d-b732-44d6-b212-61fa7c725bbe)
 
-![Capture d’écran, le 2023-09-27 à 22 49 01](https://github.com/nuage365/compta365/assets/102873102/8d385e12-a59f-49a9-8d33-28c82cdc60f2)
+### Module Compagnies
+![compta365_Mainmenu](https://github.com/nuage365/compta365/assets/102873102/7eba3be6-1aa2-4715-b911-f4cd8d962c5c)
 
 
-Documentation détaillée par module à venir :)
+![compta365_compagnies_details](https://github.com/nuage365/compta365/assets/102873102/0fba538c-ef85-420d-b5b3-c5775889209e)
+
+### Module Périodes fiscales
+![compta365_periodefiscale_liste](https://github.com/nuage365/compta365/assets/102873102/74d15ff2-8706-493a-9863-19688855780f)
+
+
+![compta365_Periodefiscale_details](https://github.com/nuage365/compta365/assets/102873102/042d670a-9446-4f8b-8227-042c51481a35)
+
+### Module Plans comptables
+![compta365_plancomptable_liste](https://github.com/nuage365/compta365/assets/102873102/2461530f-ef8a-4fa9-98cf-8f81e6fd04d7)
+
+
+![compta365_plancomptable_details](https://github.com/nuage365/compta365/assets/102873102/20a5d07a-e803-4f80-884f-af090b7d332c)
+
+### Module Journaux comptables
+![compta365_journauxcomptables_liste](https://github.com/nuage365/compta365/assets/102873102/fb4c7854-adcb-4f80-bb0d-69671c9a3100)
+
+
+![compta365_journauxcomptables_details](https://github.com/nuage365/compta365/assets/102873102/337328a1-f679-41b5-bc05-9092b4c717b2)
+
+### Module Tiers
+![compta365_tiers_client_liste](https://github.com/nuage365/compta365/assets/102873102/7718d615-0e67-431c-bff5-3c10af0a90b6)
+
+
+![compta365_Tiers_autres_liste](https://github.com/nuage365/compta365/assets/102873102/bcf503b0-262e-4c71-9e05-38fc03d3717f)
+
+### Module Transactions
+![compta365_transactions_liste](https://github.com/nuage365/compta365/assets/102873102/7614fcdc-50a6-427d-9480-998b9ff7b50e)
+
+
+![compta365_transactions_details](https://github.com/nuage365/compta365/assets/102873102/55692f23-fcc3-453d-8e09-6a073326dcc1)
+
+### Module Rapports
+#### Rapport "Déclarations des taxes"
+![compta365_powerbi_declarationtaxes](https://github.com/nuage365/compta365/assets/102873102/00807c27-578e-402f-9c5c-0fc7413140fd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
