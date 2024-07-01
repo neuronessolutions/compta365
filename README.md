@@ -53,7 +53,7 @@ Ensuite, nous donnons les fonctionnalités par version, puis la documentation d�
   
 # Description du modèle de données et liens entre les données
 
-![Compta365 Modèle de données (3)](https://github.com/neuronessolutions/compta365/assets/102873102/02781fca-844d-4db3-9a74-cf3bd0370b89)
+![Compta365 Modèle de données](https://github.com/neuronessolutions/compta365/assets/102873102/bc950026-07df-487d-a348-a9a54307fd86)
 
 
 # Structure détaillée des données et des objets par table
